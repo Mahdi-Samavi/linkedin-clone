@@ -1,0 +1,139 @@
+.sidebar {
+    grid-area: sidebar;
+}
+
+.sidebar__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar__profile_bg_image {
+    background-image: url(https://static-exp1.licdn.com/sc/h/cpemy7gsm8bzfb5nnbbnswfdm);
+    background-position: center;
+    background-size: 462px;
+    display: block;
+    width: 100%;
+    height: 54px;
+}
+
+.sidebar__info > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar__info > a:hover {
+    text-decoration: underline;
+}
+
+.sidebar__info img {
+    position: relative;
+    top: -35px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.sidebar__info > p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+
+.sidebar__block {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 12px 0;
+}
+
+.sidebar__grow_up {
+    width: 100%;
+    padding: 4px 12px;
+}
+
+.sidebar__grow_up:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sidebar__grow_up p:first-of-type {
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+}
+
+.sidebar__grow_up p span {
+    position: absolute;
+    right: 0;
+    color: #0a66c2;
+    font-weight: 600;
+}
+
+.sidebar__grow_up p {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.sidebar__premium {
+    width: 100%;
+    padding: 12px;
+    margin: -12px 0;
+}
+
+.sidebar__premium:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sidebar__premium > div {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__premium:hover div p {
+    color: #0a66c2;
+}
+
+.sidebar__premium svg {
+    width: 16px;
+    height: 16px;
+}
+
+.sidebar__premium p {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.sidebar__premium > p {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar__items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    margin: -12px 0;
+}
+
+.sidebar__items:hover {
+    background-color:rgba(0, 0, 0, 0.08);
+}
+
+.sidebar__items svg {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar__items p {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+}

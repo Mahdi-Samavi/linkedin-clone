@@ -1,0 +1,24 @@
+.aside {
+    grid-area: aside;
+}
+
+.aside__feed_follows {
+    padding: 12px;
+}
+
+.aside__feed_follows_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside__feed_follows_header span {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.aside__feed_follows_header svg {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 16px;
+}

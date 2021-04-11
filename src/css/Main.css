@@ -1,0 +1,130 @@
+.main {
+    grid-area: main;
+}
+
+.main__share_box {
+    padding: 8px 16px;
+    padding-bottom: 0;
+}
+
+.main__row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__share_box button {
+    transition: all 0.3s;
+    width: 100%;
+    margin-left: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    border-radius: 35px;
+    line-height: 1.5;
+    padding: 10px 8px 10px 16px;
+    color:rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+}
+
+.main__share_box button:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#send_post {
+    display: none;
+}
+
+.main__model_header {
+    display: flex;
+    align-items: center;
+}
+
+.main__model_header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 5px 12px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+.main__model_header button svg:first-of-type {
+    width: 16px;
+    height: 16px;
+}
+
+.main__model_header button span {
+    padding: 0 4px;
+    font-weight: 600;
+}
+
+.main__post_options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.main__post_options a {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.8rem 16px;
+    border-radius: 0.2rem;
+    transition: all 0.3s;
+}
+
+.main__post_options a:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.main__post_option_photo svg {
+    color: #70b5f9;
+}
+
+.main__post_option_video svg {
+    color: #7fc15e;
+}
+
+.main__post_option_event svg {
+    color: #e7a33e;
+}
+
+.main__post_option_write_article svg {
+    color: #f5987e;
+}
+
+.main__sort_by {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    white-space: nowrap;
+    outline: none;
+}
+
+.main__sort_by::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,.15);
+    margin-right: 8px;
+}
+
+.main__sort_by svg {
+    margin-right: -4px;
+}
