@@ -1,9 +1,13 @@
 import PublicIcon from '@material-ui/icons/Public';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import PhotoSizeSelectActualIcon from '@material-ui/icons/PhotoSizeSelectActual';
+import AddIcon from '@material-ui/icons/Add';
+import PhotoIcon from '@material-ui/icons/Photo';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import DescriptionIcon from '@material-ui/icons/Description';
+import PhotoSizeSelectActualIcon from '@material-ui/icons/PhotoSizeSelectActual';
 import EventIcon from '@material-ui/icons/Event';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import PostOpt from '../Components/PostOpt';
 import Sort from '../Components/Sort';
 import Posts from '../Components/Posts';
 import '../css/Main.css';
@@ -41,7 +45,17 @@ export default function Main(props) {
                         </div>
                         <form>
                             <textarea name="content" value="" placeholder="What do you want to talk about?" />
-                            <button>Post</button>
+                            <div>
+                                <button>Post</button>
+                                <div>
+                                    <PostOpt options={[
+                                        {icon: <AddIcon />, action: ''},
+                                        {icon: <PhotoIcon />, action: ''},
+                                        {icon: <YouTubeIcon />, action: ''},
+                                        {icon: <DescriptionIcon />, action: ''}
+                                    ]} />
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>

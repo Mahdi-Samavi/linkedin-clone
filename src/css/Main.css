@@ -38,9 +38,19 @@
     display: none;
 }
 
+#model__content textarea {
+    width: 100%;
+    height: 200px;
+    border: none;
+    font-family: inherit;
+    outline: 0;
+    resize: none;
+}
+
 .main__model_header {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .main__model_header button {
