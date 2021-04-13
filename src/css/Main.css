@@ -47,6 +47,53 @@
     resize: none;
 }
 
+#form_option_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form_option_wrap button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    min-width: 40px;
+    color: #606060;
+    outline: 0;
+    cursor: pointer;
+}
+
+#form_option_wrap > button {
+    border: 0;
+    border-radius: 40px;
+    width: 70px;
+}
+
+#post_options {
+    display: flex;
+}
+
+#post_options ul {
+    display: flex;
+    padding-right: 7px;
+    margin-right: 7px;
+    border-right: 1px solid #dcdcdc;
+}
+
+#post_options button {
+    background-color: transparent;
+}
+
+#post_options > button {
+    width: 110px;
+}
+
+#post_options button:hover {
+    background-color: #e4e4e4;
+}
+
 .main__model_header {
     display: flex;
     align-items: center;
