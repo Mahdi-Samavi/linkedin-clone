@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import PublicIcon from '@material-ui/icons/Public';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import AddIcon from '@material-ui/icons/Add';
@@ -44,7 +45,7 @@ export default function Main(props) {
                                 </button>
                             </div>
                         </div>
-                        <form method="post">
+                        <form id="post_form" method="post">
                             <textarea name="content" value="" placeholder="What do you want to talk about?" />
                             <div id="form_option_wrap">
                                 <div id="post_options">

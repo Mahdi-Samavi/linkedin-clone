@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import firebase from '../firebase';
 import CloseIcon from '@material-ui/icons/Close';
 import '../css/Model.css';
 
@@ -19,6 +20,15 @@ export default function Model() {
 
         document.getElementById('model__close').addEventListener('click', e => {
             model.classList.remove('active');
+        });
+
+        let form = document.getElementById('post_form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            firebase.collection('posts').add({
+                content: (new FormData(e.target)).get('content')
+            })
         });
     });
 
